@@ -48,7 +48,7 @@
 %\setmathfont[Ligatures=TeX,Path=Res/fonts/]{BRADHI}
 \setmathfont{latinmodern-math.otf}
 
-\newcommand{\learned}{{(0.05, 1)/$0$}}
+\newcommand{\learned}{{(0.05, 1)/$$}}
 % frame counter
 \newcounter{totalfr}
 \setbeamertemplate{footline}{
@@ -117,11 +117,11 @@
     \end{frame}
   }
 }
-\newenvironment{framebg}[1]
+\newenvironment{framebg}[3]
 {
     \usebackgroundtemplate{%
-    \tikz[overlay,remember picture] \node[opacity=0.5, at=(current page.center)] {
-      \includegraphics[height=\paperheight]{Res/img/background}};
+    \tikz[overlay,remember picture] \node[opacity=#3, at=(current page.center)] {
+      \includegraphics[height=\paperheight]{#2}};
     }
     \begin{frame}{#1}
 }

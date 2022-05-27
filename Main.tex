@@ -22,45 +22,39 @@
 }
 
 \begin{document}
-    % \include{Src/Naslovna}
-    % \begin{frame}{Lakiranje rama}
-    %     \Background{Res/img/coating}{0.5}
-    % \end{frame}
-    % \framecard{\Huge{Lakiranje kocke?}}
-    % 
-    % \begin{frame}{}
-    %     \Background{Res/img/operation}{0.5}
-    % \end{frame}
-    % \begin{frame}{Grupe}
-    %     \Background{Res/img/group}{0.5}
-    %     \begin{enumerate}
-    %         \itemR $(a \circ b) \circ c = a \circ (b \circ c)$
-    %         \itemR $\exists e \forall a \quad a \circ e = e \circ a = a$
-    %         \itemR $\forall a \exists a^{-1}  \quad a \circ a^{-1} = a^{-1} \circ a = e$
-    %         \item[${\color{magenta} \rightarrow}$] $a \oplus b = b \oplus a$
-    %     \end{enumerate}
-    % \end{frame}
-    % \framecard{\Huge{Na koliko načina možemo da rotiramo kocku?}}
-    % \begin{frame}{Izomorfizmi}
-    %     \Background{Res/img/reflection}{0.7}
-    %     \begin{df}[Permutacija]
-    %         Permutacija je bilo koja bijekcija skupa u samog sebe.
-    %     \end{df}
-    %     \begin{teo}[Kejli]
-    %         Svaka grupa je izomorfna nekoj grupi permutacija
-    %     \end{teo}
-    % \end{frame}
-    \begin{frame}{Kocka je bačena (jer je loše izlakirana)}
-        \Background{Res/img/rubic}{0.5}
+    \include{Src/Naslovna}
+    \begin{framebg}{Lakiranje rama}{Res/img/coating}{0.5}
+    \end{framebg}
+    \framecard{\Huge{Lakiranje kocke?}}
+
+    \begin{framebg}{}{Res/img/operation}{0.5}
+    \end{framebg}
+    \begin{framebg}{Grupe}{Res/img/group}{0.5}
+        \begin{enumerate}
+            \itemR $(a \circ b) \circ c = a \circ (b \circ c)$
+            \itemR $\exists e \forall a \quad a \circ e = e \circ a = a$
+            \itemR $\forall a \exists a^{-1}  \quad a \circ a^{-1} = a^{-1} \circ a = e$
+            \item[${\color{magenta} \rightarrow}$] $a \oplus b = b \oplus a$
+        \end{enumerate}
+    \end{framebg}
+    \framecard{\Huge{Na koliko načina možemo da rotiramo kocku?}}
+    \begin{framebg}{Izomorfizmi}{Res/img/reflection}{0.7}
+        \begin{df}[Permutacija]
+            Permutacija je bilo koja bijekcija skupa u samog sebe.
+        \end{df}
+        \begin{teo}[Kejli]
+            Svaka grupa je izomorfna nekoj grupi permutacija
+        \end{teo}
+    \end{framebg}
+    \begin{framebg}{Kocka je bačena (jer je loše izlakirana)}{Res/img/rubic}{0.5}
         $$S_4 \cong \langle s_1, s_2, s_3 \mid 
             s_1^2 = s_2^2 = s_3^2 = (s_1s_2)^2 = (s_2s_3)^3 = (s_1s_3)^3 = e \rangle
         $$
         \begin{idea}
             Svaki dan farbamo 3, a ne 1 stranu!
         \end{idea}
-    \end{frame}
-    \begin{frame}{Geometrijska začkoljica}
-        \Background{Res/img/geometry}{0.7}
+    \end{framebg}
+    \begin{framebg}{Geometrijska začkoljica}{Res/img/geometry}{0.7}
         \begin{thinker}
             Kako predstaviti kretanje po prostoru?
         \end{thinker}
@@ -68,9 +62,8 @@
         \begin{thinker}
             Šta su vektori?
         \end{thinker}
-    \end{frame}
-    \begin{frame}{Prostranstva}
-        \Background{Res/img/trait}{0.4}
+    \end{framebg}
+    \begin{framebg}{Prostranstva}{Res/img/trait}{0.4}
         $u, v \in V \qquad \alpha, \beta \in \mathbb{K}$
         \begin{multicols}{2}
             \begin{itemize}
@@ -88,59 +81,118 @@
                 \item[$\color{magenta} \rightarrow$] $(-\alpha) \vec u = \underbar {\alpha \vec u}$
             \end{itemize}
         \end{multicols}
-    \end{frame}
-    \begin{frame}{Kombinacije}
-        \Background{Res/img/span}{0.5}
+    \end{framebg}
+    \begin{framebg}{Kombinacije}{Res/img/span}{0.5}
         \begin{itemize}
             \itemR $\mathcal L(M) = \{ v \in V \mid v \text{ je linearna kombinacija vektora iz } M \}$
             \itemR $dim V = |B|, \text{ gde je B neki bazni skup }$
             \itemR $V \cong \mathbb{K}^{dim V}$
         \end{itemize}
-    \end{frame}
+    \end{framebg}
     \framecard{\Huge{Zašto je $\Real^3$ trodimenzionalan?}}
-    \begin{frame}{Zvuk slike}
-        \Background{Res/img/ATD}{0.9}
-    \end{frame}
-    \begin{frame}{Perspektiva}
-        \Background{Res/img/speakers}{0.5}
-        $\text{Zvučnik} \cong A(t) * p(x, y, z, t)$
+    \begin{framebg}{Ponizni vektori}{Res/img/fibonacci}{0.4}
+        {$\color{blue} \rightarrow$} Nizovi gde je svaki sledeći član
+        jednak zbiru prethodna 2 čini vektorski prostor!
+        \begin{thinker}
+            Koliko dimenzionalan je ovaj prostor?
+        \end{thinker}
+    \end{framebg}
+    \begin{framebg}{Zvuk slike}{Res/img/ATD}{0.9}
+    \end{framebg}
+    \begin{framebg}{Perspektiva}{Res/img/speakers}{0.5}
+        $\text{Zvučnik} \cong A(t) \cdot p(x, y, z, t)$
         \begin{idea}
             Funkcije su vektori!
         \end{idea}
-    \end{frame}
+    \end{framebg}
     \begin{frame}{3Blue1Brown}
         \tikz[remember picture, overlay] \node[at=(current page.center)] {
             \includegraphics[width=0.8\paperwidth]{Res/img/fourier}
         };
     \end{frame}
-    \begin{frame}{Linearna preslikavanja}
-        Preslikavanje $f : \mathbb V \to \mathbb W$ je linearno ako važi:
-        $$f(\alpha \vec x + \beta \vec y) = \alpha f(\vec x) + \beta f(\vec y)$$
-        Tada je:
-        $$f(\vec 0_{\mathbb V}) = \vec 0_{\mathbb W}$$
-        Prostor svih linearnih preslikavanja $f : \mathbb V \to \mathbb W$ je vektorski
-        prostor dimenzije $dim \mathbb V \cdot dim \mathbb W$
-    \end{frame}
-    \begin{frame}{Magični kvadrati}
+    \begin{framebg}{Linearna preslikavanja}{Res/img/mapping}{0.5}
+        \begin{df}
+            Preslikavanje $f : \mathbb V \to \mathbb W$ je linearno ako važi:
+            $$f(\alpha \vec x + \beta \vec y) = \alpha f(\vec x) + \beta f(\vec y)$$
+        \end{df}
+        \begin{thinker}
+            Izračunati $f(\vec 0_{\mathbb V})$
+        \end{thinker}
+    \end{framebg}
+    \begin{framebg}{Red or Blue}{Res/img/morpheus}{0.7}
+        \begin{teo}
+            Prostor svih linearnih preslikavanja $f : \mathbb V \to \mathbb W$ u oznaci
+            $Hom(\mathbb V, \mathbb W)$ je vektorski
+            prostor dimenzije $dim \mathbb V \cdot dim \mathbb W$
+        \end{teo}
+        \begin{df}[Dualan prostor]
+            Prostor funkcija $Hom(\mathbb V, \mathbb K)$ je dimenzije $dim \mathbb V$,
+            pa je sa njim izomorfan. Elementi ovog prostora nazivaju se \textbf{linearne funkcionele}.
+        \end{df}
+    \end{framebg}
+    \begin{framebg}{Igrice}{Res/img/game}{0.5}
+        \begin{align*}
+            \begin{pmatrix}
+                x & 0 & 0 & 0 \\
+                0 & y & 0 & 0 \\
+                0 & 0 & z & 0 \\
+                0 & 0 & 0 & 1
+            \end{pmatrix} &
+            \begin{pmatrix}
+                \frac{2n}{r-l} & 0 & \frac{r+l}{r-l} & 0 \\
+                0 & \frac{2n}{t-b} & \frac{t+b}{t-b} & 0 \\
+                0 & 0 & \frac{f+n}{f-n} & \frac{2nf}{f-n} \\
+                0 & 0 & -1 & 0
+            \end{pmatrix} \\
+            \begin{pmatrix}
+                1 & 0 & 0 & x \\
+                0 & 1 & 0 & y \\
+                0 & 0 & 1 & z \\
+                0 & 0 & 0 & 1
+            \end{pmatrix} &
+            \begin{pmatrix}
+                cos \theta & -sin \theta & 0 & 0 \\
+                sin \theta &  cos \theta & 0 & 1 \\
+                0 & 0 & 1 & 0 \\
+                0 & 0 & 0 & 1
+            \end{pmatrix}
+        \end{align*}
+    \end{framebg}
+    \begin{frame}{Kvadratići}
         %\pause
-        Sabiranje, množenje skalarom?
+        \begin{thinker}
+            Šta su ovde vektori? Kako se sabiraju, a kako skaliraju i čime?
+        \end{thinker}
+        \includegraphics[height=\textheight]{Res/img/magic_square}
     \end{frame}
-    \begin{frame}{Fibonačijevi nizovi}
-        Koliko dimenzionalan je ovaj prostor?
-    \end{frame}
-    \begin{frame}{Igrice}
-        Rotacije i izduživanja su linearne transformacije.
-        Translacije 3D prostora su linearne transformacije 4D prostora.
-        Projekcije 3D prostora na 2D ekran su linearne transformacije.
-    \end{frame}
-    \begin{frame}{Svadba}
+    \include{Src/Magicni_baza}
+    \framecard{
         Mnogo ljudi došlo je na svadbu, zapravo ispostavilo se da su došli svi,
         odnosno na kraju nije više bilo mesta za sedenje. Međutim, niko nije bio obavešten o
         rasporedu sedenja. Koja je verovatnoća da niko nije seo na predviđeno mesto?
-        (rešenje $e^{-1}$)
-    \end{frame}
-    \begin{frame}
-        Hvala na pažnji!
-    \end{frame}
-    %\include{Src/Magicni_baza}
+    }
+    \begin{framebg}{}{Res/img/inclusion}{0.5}
+        $$ \left| \binom{\{A_1,...,A_n\}} k \right| = \binom n k = \frac {n!} {k! (n-k)!}
+        $$
+        $$(a + b)^n = \sum_{k=0}^n \binom n k a^k b^{n-k}
+        $$
+        $$\left| \bigcup_{i=1}^n A_i\right| = 
+         \sum_{k=1}^n (-1)^{k+1}\sum_{F \in \binom{\{A_1,...,A_n\}} k} \left| \bigcap F \right|
+        $$
+
+    \end{framebg}
+    \begin{framebg}{Svadba}{Res/img/wedding}{0.5}
+        \pause
+        \begin{itemize}
+            \itemR Za $n=2$  je $P = 0$ \pause
+            \itemR Za $n=2$  je $P = 0.5$ \pause
+            \itemR Za $n=3$  je $P \approx 0.333333$ \pause
+            \itemR Za $n=4$  je $P = 0.375$ \pause
+            \itemR Za $n=5$  je $P \approx 0.366667$ \pause
+            \itemR Za $n=7$  je $P \approx 0.367857$ \pause
+            \itemR Za $n=10$ je $P \approx 0.367879$ \pause
+            \itemR Za $n \to \infty$ je $P \approx 1/e$
+        \end{itemize}
+    \end{framebg}
+    \framecard{\Huge Hvala na pažnji!}
 \end{document}
