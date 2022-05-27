@@ -23,11 +23,18 @@
 
 \begin{document}
     \include{Src/Naslovna}
+    \include{Src/Upozorenje}
     \begin{framebg}{Lakiranje rama}{Res/img/coating}{0.5}
+        \begin{thinker}
+            Kako ravnomerno izlakirati ram?
+        \end{thinker}
     \end{framebg}
     \framecard{\Huge{Lakiranje kocke?}}
-
     \begin{framebg}{}{Res/img/operation}{0.5}
+        \pause
+        \begin{df}[Operacija]
+            Proizvoljna funkcija iz $A^n \to A$ naziva se $n$-arna operacija skupa A.
+        \end{df}
     \end{framebg}
     \begin{framebg}{Grupe}{Res/img/group}{0.5}
         \begin{enumerate}
@@ -42,6 +49,12 @@
         \begin{df}[Permutacija]
             Permutacija je bilo koja bijekcija skupa u samog sebe.
         \end{df}
+        \pause
+        \begin{df}
+            Izomorfizam je bijekcija koja prolazi kroz operacije,
+            i očuvava konstante.
+        \end{df}
+        \pause
         \begin{teo}[Kejli]
             Svaka grupa je izomorfna nekoj grupi permutacija
         \end{teo}
@@ -50,6 +63,11 @@
         $$S_4 \cong \langle s_1, s_2, s_3 \mid 
             s_1^2 = s_2^2 = s_3^2 = (s_1s_2)^2 = (s_2s_3)^3 = (s_1s_3)^3 = e \rangle
         $$
+        \pause
+        \begin{thinker}
+            Kako da ipak izlakiramo kocku?
+        \end{thinker}
+        \pause
         \begin{idea}
             Svaki dan farbamo 3, a ne 1 stranu!
         \end{idea}
@@ -58,13 +76,17 @@
         \begin{thinker}
             Kako predstaviti kretanje po prostoru?
         \end{thinker}
-        %\pause
+        \pause
         \begin{thinker}
             Šta su vektori?
         \end{thinker}
     \end{framebg}
     \begin{framebg}{Prostranstva}{Res/img/trait}{0.4}
-        $u, v \in V \qquad \alpha, \beta \in \mathbb{K}$
+        \begin{df}[Vektorski prostor]
+            Prostor $V$ za koji važe sledeće osobine za svako
+            $u, v \in V$ i za svako $\alpha, \beta \in \mathbb K$
+            naziva se vektorski prostor nad poljem $\mathbb K$.
+        \end{df}
         \begin{multicols}{2}
             \begin{itemize}
                 \itemR  $1 \circ u = u$
@@ -72,6 +94,7 @@
                 \itemR  $(\alpha \oplus \beta) \circ u = \alpha \circ u \oplus \beta \circ u$
                 \itemR  $\alpha \circ (\beta \circ u) = (\alpha \cdot \beta) \circ u$
             \end{itemize}
+            \pause
             \columnbreak
             \begin{itemize}
                 \item[$\color{magenta} \rightarrow$] $0 \vec u = \vec 0$
@@ -91,8 +114,12 @@
     \end{framebg}
     \framecard{\Huge{Zašto je $\Real^3$ trodimenzionalan?}}
     \begin{framebg}{Ponizni vektori}{Res/img/fibonacci}{0.4}
-        {$\color{blue} \rightarrow$} Nizovi gde je svaki sledeći član
-        jednak zbiru prethodna 2 čini vektorski prostor!
+        \pause
+        \begin{df}[Fibonačijevi nizovi]
+            Nizovi gde je svaki sledeći član
+            jednak zbiru prethodna 2 čini vektorski prostor.
+        \end{df}
+        \pause
         \begin{thinker}
             Koliko dimenzionalan je ovaj prostor?
         \end{thinker}
@@ -100,7 +127,10 @@
     \begin{framebg}{Zvuk slike}{Res/img/ATD}{0.9}
     \end{framebg}
     \begin{framebg}{Perspektiva}{Res/img/speakers}{0.5}
-        $\text{Zvučnik} \cong A(t) \cdot p(x, y, z, t)$
+        \begin{construct}
+            $\text{Zvučnik} \cong A(t) \cdot p(x, y, z, t)$
+        \end{construct}
+        \pause
         \begin{idea}
             Funkcije su vektori!
         \end{idea}
@@ -115,16 +145,19 @@
             Preslikavanje $f : \mathbb V \to \mathbb W$ je linearno ako važi:
             $$f(\alpha \vec x + \beta \vec y) = \alpha f(\vec x) + \beta f(\vec y)$$
         \end{df}
+        \pause
         \begin{thinker}
             Izračunati $f(\vec 0_{\mathbb V})$
         \end{thinker}
     \end{framebg}
     \begin{framebg}{Red or Blue}{Res/img/morpheus}{0.7}
+        \pause
         \begin{teo}
             Prostor svih linearnih preslikavanja $f : \mathbb V \to \mathbb W$ u oznaci
             $Hom(\mathbb V, \mathbb W)$ je vektorski
             prostor dimenzije $dim \mathbb V \cdot dim \mathbb W$
         \end{teo}
+        \pause
         \begin{df}[Dualan prostor]
             Prostor funkcija $Hom(\mathbb V, \mathbb K)$ je dimenzije $dim \mathbb V$,
             pa je sa njim izomorfan. Elementi ovog prostora nazivaju se \textbf{linearne funkcionele}.
@@ -171,14 +204,22 @@
         odnosno na kraju nije više bilo mesta za sedenje. Međutim, niko nije bio obavešten o
         rasporedu sedenja. Koja je verovatnoća da niko nije seo na predviđeno mesto?
     }
-    \begin{framebg}{}{Res/img/inclusion}{0.5}
-        $$ \left| \binom{\{A_1,...,A_n\}} k \right| = \binom n k = \frac {n!} {k! (n-k)!}
-        $$
-        $$(a + b)^n = \sum_{k=0}^n \binom n k a^k b^{n-k}
-        $$
-        $$\left| \bigcup_{i=1}^n A_i\right| = 
-         \sum_{k=1}^n (-1)^{k+1}\sum_{F \in \binom{\{A_1,...,A_n\}} k} \left| \bigcap F \right|
-        $$
+    \begin{framebg}{Izbor}{Res/img/inclusion}{0.4}
+        \begin{teo}
+            Podskupova veličine $k$ skupa od $n$ elemenata ima:
+            $$ \left| \binom{\{A_1,...,A_n\}} k \right| = \binom n k = \frac {n!} {k! (n-k)!}
+            $$
+        \end{teo}
+        \pause
+        \begin{sidenote}
+        Važi binomna formula: $(a + b)^n = \sum_{k=0}^n \binom n k a^k b^{n-k}$
+        \end{sidenote}
+        \pause
+        \begin{teo}[formula uključenja-isključenja]
+            $$\left| \bigcup_{i=1}^n A_i\right| = 
+             \sum_{k=1}^n (-1)^{k+1}\sum_{F \in \binom{\{A_1,...,A_n\}} k} \left| \bigcap F \right|
+            $$
+        \end{teo}
 
     \end{framebg}
     \begin{framebg}{Svadba}{Res/img/wedding}{0.5}
@@ -194,5 +235,5 @@
             \itemR Za $n \to \infty$ je $P \approx 1/e$
         \end{itemize}
     \end{framebg}
-    \framecard{\Huge Hvala na pažnji!}
+    \framecard{\Huge{Hvala na pažnji!} \\ \large{\LaTeX\  btw}}
 \end{document}

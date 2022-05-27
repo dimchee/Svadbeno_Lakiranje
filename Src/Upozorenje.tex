@@ -1,0 +1,26 @@
+{
+    \newcommand{\yarr}{$\color{yellow}{\rightarrow}$}
+    \usebackgroundtemplate{%
+        \tikz[overlay,remember picture] {
+            \node[opacity=0.6, at=(current page.center)] {
+                \includegraphics[height=\paperheight]{Res/img/warning}
+            };
+        }
+    }
+    \begin{frame}[plain]
+        \begin{center}
+            \huge{Upozorenje!!!}
+        \end{center}
+        \begin{itemize}
+            \pause
+            \item[\yarr] predavanje će biti prilično intenzivno po mom običaju
+            \pause
+            \item[\yarr] ako u bilo kom trenutku postoji nešto što nije jasno, slobodno me prekinite
+            \pause
+            \item[\yarr] slobodno kopirajte prezentaciiju, mada je prilično nedorečena
+            \pause
+            \item[\yarr] ne preporučujem pisanje, mada ako ipak kažem nešto zanimljivo, a možda
+                čak i pametno (i to se desi), to zapišite
+        \end{itemize}
+    \end{frame}
+}
