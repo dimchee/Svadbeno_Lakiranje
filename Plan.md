@@ -32,7 +32,7 @@ dakle 6 * 4 = 24
 
 - Šta znači da je nešto izomorfno
 - Šta je permutacija
-- Kejlijeva teorema o izomorfizmu grupa (dokaz? uzmu se λₐ := g ↦ a*g)
+- Kejlijeva teorema o izomorfizmu grupa (dokaz? uzmu se $λ_a := g \mapsto a*g$)
 
 ## Kocka je bačena
 
@@ -112,7 +112,7 @@ može da se predstavi preko jedne (za odabrane baze)
 - $|S| = n!$ - broj svih permutacija
 - $|A_i| = (n-1)!$ - broj permutacija ako fiksiramo $i$-tog
 - $|A_i \cap A_j| = (n-2)!$ - broj permutacija ako fiksiramo $i$-tog i $j$-tog
-- $|A_i_1 \cap A_i_2 \cap ... \cap A_i_k| = (n-k)!$ - broj permutacija ako fiksiramo njih $k$
+- $|A_{i1} \cap A_{i2} \cap ... \cap A_{ik}| = (n-k)!$ - broj permutacija ako fiksiramo njih $k$
 
 ## Formula uključenja-isključenja
 - Posmatrajmo vektorski prostor svih funkcija $V := |\cup_{i=1} n A_i| \to R$, i uočimo
